@@ -1,0 +1,56 @@
+.tooltip{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid red;
+}
+
+.tooltip .tooltiptext{
+    visibility: hidden;
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 100px;
+    text-align: center;
+    z-index: 1;
+    padding: 5px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltiptext{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+body{
+    counter-reset:number;
+}
+
+h2::before{
+    counter-increment:number;
+    content: counter [number];
+    background-color: blue;
+    color:white;
+    padding:  5px 12px;
+    border-radius: 50%;
+    margin:10px;
+    
+}
+
+:root{
+    --variabla1: #bd0707;
+    --variabla2: #ffffff;
+    --variable3: 20px;
+    --variable4: blue;
+} 
+
+h3{
+    color: var(--variabla1);
+
+}
+
+#Programmim{
+    color: var(--variable4);
+}
